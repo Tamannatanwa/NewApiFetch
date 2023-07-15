@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex main">
+      <div class="logo">
+        <img id="img" src="tanu.png" alt="logo" />
+      </div>
+      <div class="ul-links">
+        <ul class="flex navlink">
+         <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+         <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('finance')">Finance</li>
+         <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('politics')">Politics</li>
+        </ul>
+      </div>
+      <div class="input-box" id="input-box">
+        <input
+          type="text"
+          name=""
+          value=""
+          id="searchNews"
+          placeholder="e.g Search"
+        />
+        <button id="button">Search</button>
+      </div>
+    </div>
+    <div class="cards-parent"></div>
+    <template id="movie-card-template">
+      <div class="card">
+        <img
+          src="https://wallpapers.com/images/hd/cool-picture-art-of-lion-rlst9ftvz1dvvn37.jpg"
+          alt=""
+          id="news-img"
+        />
+        <div class="card-content">
+          <h3 id="heading">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            ipsam.
+          </h3>
+          <h5 id="source">Tamanna News. 27/07/2022</h5>
+          <p id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta
+            ducimus natus voluptas architecto eos, libero eum
+          </p>
+          <br />
+        </div>
+      </div>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
